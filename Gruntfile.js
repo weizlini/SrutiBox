@@ -12,7 +12,7 @@ module.exports = function(grunt) {
                 files: [{
                     expand: true,
                     cwd: 'src/assets/audio',
-                    src: ['**/*.aif'],
+                    src: ['**/*.mp3'],
                     dest: 'demo/audio'
                 },{
                   expand: true,

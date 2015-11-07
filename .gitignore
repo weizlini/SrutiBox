@@ -4,3 +4,4 @@ demo
 wp-plugin
 .project
 .sass-cache
+.DS_STORE
