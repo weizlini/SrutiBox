@@ -13,7 +13,8 @@ module.exports = function(grunt) {
                     expand: true,
                     cwd: 'src/assets/audio',
                     src: ['**/*.mp3'],
-                    dest: 'demo/audio'
+                    dest: 'demo/audio',
+                    flatten:true
                 },{
                   expand: true,
                     cwd: 'bower_components/jquery/dist',
