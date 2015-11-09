@@ -15,6 +15,9 @@ grunt build
 
 this will load all the dependencies and then build the demo and wp-plugin folder
 
+##audio files
+this project contains several versions of the aif tampura samples, and mp3 versions. only the mp3 versions are used in the build, but the aifs are included if you wish to play with the original sound files
+
 ##demo
 
 using your localhost, copy the demo folder to your localhost document root, or create a synmlink and load the index.html file
