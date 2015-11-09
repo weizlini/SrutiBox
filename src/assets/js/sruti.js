@@ -71,18 +71,22 @@ var sruti = {
     
     $( ".start" ).click(function(){
       //sruti.stop();
-      if(!sruti.playing)
-      {
-        sruti.play();
+      if(!$(this).hasClass('on')){
+        if(!sruti.playing)
+        {
+          sruti.play();
+        }
+        $(this).addClass('on');
+        $(this).html('stop');
+      }else{
+        sruti.stop();
+        $('.start').removeClass('on');
+        $(this).html('play');
       }
-      $(this).addClass('on');
+      
       
     });
-    $( ".stop" ).click(function(){
-      //sruti.stop();
-      sruti.stop();
-      $('.start').removeClass('on');
-    });
+    
   },
   debug:true,
   log:function(text){
