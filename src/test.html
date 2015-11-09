@@ -5,38 +5,37 @@
 </head>
 
 <body>
-<script type="text/javascript">
-                            // this is the webaudio loooooppppppp
-                            //enter url in the next line
-  var url  = 'audio/tampura_loop.wav';
-
-                            /* --- set up web audio --- */
-                            //create the context
-  var context = new webkitAudioContext();
-                            //...and the source
-  var source = context.createBufferSource();
-                             //connect it to the destination so you can hear it.
-  source.connect(context.destination);
-
-                            /* --- load buffer ---  */
-  var request = new XMLHttpRequest();
-                            //open the request
-  request.open('GET', url, true); 
-                            //webaudio paramaters
-  request.responseType = 'arraybuffer';
-                             //Once the request has completed... do this
-  request.onload = function() {
-    context.decodeAudioData(request.response, function(response) {
-                             /* --- play the sound AFTER the buffer loaded --- */
-                            //set the buffer to the response we just received.
-      source.buffer = response;
-                             //start(0) should play asap.
-      source.start(0);
-      source.loop = true;
-    }, function () { console.error('The request failed.'); } );
-  }
-  //Now that the request has been defined, actually make the request. (send it)
-  request.send();
-</script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/sruti.js"></script>
+<link rel="stylesheet" href="css/sruti-box.css">
+<div class="sruti-box">
+  <h2>tampura</h2>
+  <div class="note-picker-labels">
+    <label>C</label>
+    <label>C#</label>
+    <label>D</label>
+    <label>D#</label>
+    <label>E</label>
+    <label>F</label>
+    <label>F#</label>
+    <label>G</label>
+    <label>G#</label>
+    <label>A</label>
+    <label>A#</label>
+    <label>B</label>
+    <label>C</label>
+  </div>
+  <div class="note-picker"></div>
+  <div class="tempo-labels">
+    <label style="float:right;width:auto;">fast</label>
+    <label>slow</label>
+    <label>medium</label>
+    
+  </div>
+  <div class="tempo-slider"></div>
+  <button class="start">start</button>
+  <button class="stop">stop</button>
+</div>
 </body>
 </html>
