@@ -22,6 +22,8 @@ this project contains several versions of the aif tampura samples, and mp3 versi
 
 using your localhost, copy the demo folder to your localhost document root, or create a synmlink and load the index.html file
 
+[click here to see a live demo](http://half-lifer.com/sruti/)
+
 ##wordpress plugin
 
 the wordpress plugin has not been created yet but as soon as it is complete i'll include installation and markup instructions.
