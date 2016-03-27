@@ -2,7 +2,7 @@ module.exports = function(grunt) {
     grunt.initConfig({
        watch: {
         files: ['src/**/*'],
-        tasks: ['uglify','sass','copy'],
+        tasks: ['uglify','sass','cssmin','copy'],
       },
         copy: {
             options:{
@@ -11,8 +11,8 @@ module.exports = function(grunt) {
             demo: {
                 files: [{
                     expand: true,
-                    cwd: 'src/assets/audio',
-                    src: ['**/*.mp3'],
+                    cwd: 'src/assets/audio/sruti_edited',
+                    src: ['**/*.wav'],
                     dest: 'demo/audio',
                     flatten:true
                 },{
@@ -42,6 +42,11 @@ module.exports = function(grunt) {
                   'demo/index.html':'src/test.html'
                 },{
                   'demo/js/sruti.js':'src/assets/js/sruti.js'
+                },{
+                  expand:true,
+                  cwd:'bower_components/angular',
+                  src:['angular.js'],
+                  dest:'demo/js'
                 }
                 ]
             }
@@ -64,6 +69,17 @@ module.exports = function(grunt) {
               }]
             }
           },
+        cssmin: {
+            demo: {
+              files: [{
+                expand: true,
+                cwd: 'demo/css',
+                src: ['*.css', '!*.min.css'],
+                dest: 'demo/css',
+                ext: '.min.css'
+              }]
+            }
+          },
         connect: {
           demo: {
             options: {
@@ -78,9 +94,10 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-sass');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.registerTask('default', ['copy']);
-    grunt.registerTask('dev', ['copy','uglify','sass','connect','watch']);
-    grunt.registerTask('build',['copy','uglify','sass']);
+    grunt.registerTask('dev', ['copy','uglify','sass','cssmin','connect','watch']);
+    grunt.registerTask('build',['copy','uglify','sass','cssmin']);
     
 };

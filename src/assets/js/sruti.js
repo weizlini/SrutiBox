@@ -2,31 +2,19 @@
 //var audiocontext = new webkitAudioContext();
 var sruti = {
   samples:[
-'01_c1.mp3',
-'02_c1_sh.mp3',
-'03_d1.mp3',
-'04_d1_sh.mp3',
-'05_e1.mp3',
-'06_f1.mp3',
-'07_f1_sh.mp3',
-'08_g1.mp3',
-'09_g1_sh.mp3',
-'10_a1.mp3',
-'11_a1_sh.mp3',
-'12_b1.mp3',
-'13_c2.mp3',
-'14_c2_sh.mp3',
-'15_d2.mp3',
-'16_d2_sh.mp3',
-'17_e2.mp3',
-'18_f2.mp3',
-'19_f2_sh.mp3',
-'20_g2.mp3',
-'21_g2_sh.mp3',
-'22_a2.mp3',
-'23_a2_sh.mp3',
-'24_b2.mp3',
-'25_c3.mp3',
+'01_c1.wav',
+'02_c1-sharp.wav',
+'03_d1.wav',
+'04_d1-sharp.wav',
+'05_e1.wav',
+'06_f1.wav',
+'07_f1-sharp.wav',
+'08_g1.wav',
+'09_g1-sh.wav',
+'10_a1.wav',
+'11_a1-sharp.wav',
+'12_b1.wav',
+'13_c2.wav'
   ],
   AudioContext:null,
   source:[],
@@ -55,9 +43,9 @@ var sruti = {
       }
     });
     $( ".tempo-slider" ).slider({
-      value:60,
+      value:54,
       min: 40,
-      max: 120,
+      max: 90,
       step: 1,
       slide: function( event, ui ) {
         sruti.tempo = ui.value;
@@ -68,7 +56,19 @@ var sruti = {
         }
       }
     });
-    
+    $('label').click(function(){
+        if(this.source)
+        {
+            this.source.stop();
+            this.source = null;
+            return;
+        }
+        this.source = sruti.AudioContext.createBufferSource();
+        this.source.buffer = sruti.source[this.id-1].buffer;
+        this.source.connect(sruti.AudioContext.destination);
+        this.source.loop=true;
+        this.source.start();
+    })
     $( ".start" ).click(function(){
       //sruti.stop();
       if(!$(this).hasClass('on')){
@@ -155,7 +155,7 @@ var sruti = {
         this.tampuraKey = note;
         
   },
-  tempo:60,
+  tempo:54,
   loopTimeout:null,
   playing:false,
   play:function(){
