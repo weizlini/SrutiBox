@@ -1,0 +1,2088 @@
+/* CUSTOM THEME FOR NAADA yoga_wall
+ * By PAUL @ Blink Web Services & ANDREW @ THink Up Design
+ * Updated and Sassed January 2016 */
+/* COLORS */
+/* Video Banner CSS */
+/* line 14, ../scss/naada.sass */
+.videoBanner {
+  width: 100%;
+  position: relative;
+}
+
+/* line 19, ../scss/naada.sass */
+.videoCallout {
+  position: absolute;
+  top: 30%;
+  width: 500px;
+  left: 10%;
+  color: white;
+  font-size: 1.5rem;
+  line-height: normal;
+  font-weight: 400;
+  text-align: center;
+  z-index: 100;
+}
+/* line 30, ../scss/naada.sass */
+.videoCallout h2 {
+  color: white;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.51);
+  font-weight: 600;
+}
+/* line 34, ../scss/naada.sass */
+.videoCallout p {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.51);
+}
+/* line 36, ../scss/naada.sass */
+.videoCallout a.naada-button {
+  text-shadow: none;
+}
+@media only screen and (min-width: 640px) and (max-width: 960px) {
+  /* line 19, ../scss/naada.sass */
+  .videoCallout {
+    top: 20%;
+    width: 400px;
+    left: 5%;
+    font-size: 1.25rem;
+  }
+  /* line 43, ../scss/naada.sass */
+  .videoCallout .naada-button.large {
+    padding: 10px 15px;
+    font-size: 18px;
+  }
+  /* line 46, ../scss/naada.sass */
+  .videoCallout .text-widget p {
+    margin: 0 0 10px;
+  }
+}
+@media only screen and (max-width: 639px) {
+  /* line 19, ../scss/naada.sass */
+  .videoCallout {
+    top: 10%;
+    width: 300px;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  /* line 53, ../scss/naada.sass */
+  .videoCallout h2 {
+    font-size: 22px;
+  }
+  /* line 55, ../scss/naada.sass */
+  .videoCallout .naada-button.large {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+  /* line 58, ../scss/naada.sass */
+  .videoCallout .text-widget p {
+    margin: 0 0 10px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 19, ../scss/naada.sass */
+  .videoCallout {
+    top: 20%;
+  }
+  /* line 62, ../scss/naada.sass */
+  .videoCallout .textwidget p {
+    display: none;
+  }
+}
+@media only screen and (max-width: 400px) {
+  /* line 19, ../scss/naada.sass */
+  .videoCallout {
+    left: 0;
+  }
+  /* line 66, ../scss/naada.sass */
+  .videoCallout h2 {
+    font-size: 17px;
+  }
+  /* line 68, ../scss/naada.sass */
+  .videoCallout .textwidget p {
+    display: none;
+  }
+  /* line 70, ../scss/naada.sass */
+  .videoCallout .naada-button.large {
+    padding: 4px 10px;
+  }
+}
+
+/* line 79, ../scss/naada.sass */
+.videoBanner video {
+  z-index: -100;
+  position: relative;
+  width: 100%;
+}
+
+/* Video Banner End */
+/* Header Widget */
+/* line 88, ../scss/naada.sass */
+.site-header .widget-area {
+  margin-top: 25px;
+}
+@media only screen and (max-width: 960px) {
+  /* line 88, ../scss/naada.sass */
+  .site-header .widget-area {
+    float: left;
+    margin-top: 0;
+  }
+  /* line 93, ../scss/naada.sass */
+  .site-header .widget-area section.widget_nav_menu {
+    float: left;
+    margin-left: 15px;
+  }
+  /* line 96, ../scss/naada.sass */
+  .site-header .widget-area section#search-3 {
+    margin-right: 20px;
+    margin-left: 0;
+  }
+}
+
+/* line 100, ../scss/naada.sass */
+.header-widget-area section {
+  float: right;
+}
+
+/* line 104, ../scss/naada.sass */
+.nav-header a, .nav-header .naada-icon, .nav-header .current-menu-item > a {
+  color: #999999;
+}
+/* line 106, ../scss/naada.sass */
+.nav-header a:hover {
+  color: #333333;
+}
+/* line 109, ../scss/naada.sass */
+.nav-header .genesis-nav-menu #menu-item-329-fr a, .nav-header .genesis-nav-menu #menu-item-4881-en a, .nav-header .genesis-nav-menu #menu-item-329-fr a:hover, .nav-header .genesis-nav-menu #menu-item-4881-en a:hover {
+  color: #f7ad00;
+}
+
+/* line 112, ../scss/naada.sass */
+.site-header .search-form {
+  margin-top: 6px;
+  width: 100%;
+}
+
+/* line 116, ../scss/naada.sass */
+.widget_search form.search-form {
+  margin-bottom: 0;
+  padding: 5px 8px;
+  border-radius: 20px;
+  font-size: 16px;
+  border: 1px solid #dddddd;
+  float: left;
+  height: 30px;
+  width: auto;
+}
+/* line 125, ../scss/naada.sass */
+.widget_search form.search-form:hover {
+  background-color: #b3ba1c;
+  color: white;
+  cursor: text;
+}
+/* line 129, ../scss/naada.sass */
+.widget_search form.search-form:hover .ico-mglass {
+  background: #b3ba1c;
+  border: 2px solid white;
+}
+/* line 132, ../scss/naada.sass */
+.widget_search form.search-form:hover .ico-mglass::after {
+  background: white;
+}
+/* line 134, ../scss/naada.sass */
+.widget_search form.search-form input {
+  border: 0;
+  border-bottom: 1px solid #ecefac;
+  display: none;
+  background: transparent;
+  color: white;
+  margin-bottom: 0;
+  width: 85%;
+  padding: 0;
+  height: 20px;
+  float: right;
+}
+
+/* line 146, ../scss/naada.sass */
+.ico-mglass {
+  position: relative;
+  display: inline-block;
+  background: white;
+  border-radius: 30px;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #888888;
+  float: left;
+  margin-top: 3px;
+}
+/* line 157, ../scss/naada.sass */
+.ico-mglass:after {
+  content: "";
+  height: 2px;
+  width: 7px;
+  background: #888888;
+  position: absolute;
+  top: 7px;
+  left: 5px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+
+/* line 172, ../scss/naada.sass */
+input[type="search"]::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #cccccc;
+}
+/* line 175, ../scss/naada.sass */
+input[type="search"]:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #dddddd;
+  opacity: 1;
+}
+/* line 179, ../scss/naada.sass */
+input[type="search"]::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #dddddd;
+  opacity: 1;
+}
+/* line 183, ../scss/naada.sass */
+input[type="search"]:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #dddddd;
+}
+/* line 186, ../scss/naada.sass */
+input[type="search"]:placeholder-shown {
+  /* Standard Pseudo-class */
+  color: #dddddd;
+}
+
+/* line 190, ../scss/naada.sass */
+section#search-3 {
+  width: 30px;
+  margin-left: 20px;
+}
+
+/* End Header Widget */
+/* line 196, ../scss/naada.sass */
+body {
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  color: #666666;
+}
+
+/* line 201, ../scss/naada.sass */
+.sidebar {
+  font-size: 15px;
+  color: #666666;
+}
+
+/* line 205, ../scss/naada.sass */
+body.home {
+  background-color: white;
+}
+
+/* line 208, ../scss/naada.sass */
+.sidebar {
+  font-size: 14px;
+}
+
+/* line 211, ../scss/naada.sass */
+a, .entry-title a, .sidebar .widget-title a, .entry-content a, .sidebar a {
+  color: #f7ad00;
+}
+
+/* line 214, ../scss/naada.sass */
+a:hover, .entry-title a:hover, .sidebar .widget-title a:hover, .entry-content a:hover, .sidebar a:hover {
+  color: #e19d00;
+}
+
+/* line 217, ../scss/naada.sass */
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+}
+
+/* line 220, ../scss/naada.sass */
+hr {
+  border: 0;
+  height: 4px;
+  margin-bottom: 4rem;
+  /*background-image: -webkit-linear-gradient(left, rgba(153,153,153,0), rgba(153,153,153,0.75), rgba(153,153,153,0));
+   *background-image:    -moz-linear-gradient(left, rgba(153,153,153,0), rgba(153,153,153,0.75), rgba(153,153,153,0));
+   *background-image:     -ms-linear-gradient(left, rgba(153,153,153,0), rgba(153,153,153,0.75), rgba(153,153,153,0));
+   *background-image:      -o-linear-gradient(left, rgba(153,153,153,0), rgba(153,153,153,0.75), rgba(153,153,153,0)); */
+  width: 100%;
+  background-color: whitesmoke;
+}
+
+/* line 231, ../scss/naada.sass */
+.entry-content a, .sidebar a {
+  border-bottom: none;
+}
+
+/* line 234, ../scss/naada.sass */
+button {
+  color: white;
+  font-weight: bold;
+  background-color: #f7ad00;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+/* line 242, ../scss/naada.sass */
+input {
+  padding: 0.95rem;
+}
+/* line 244, ../scss/naada.sass */
+input[type="button"], input[type="reset"], input[type="submit"] {
+  color: white;
+  font-weight: bold;
+  background-color: #f7ad00;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+/* buttons */
+/* line 278, ../scss/naada.sass */
+.naada-button {
+  display: inline-block;
+  position: relative;
+  margin: 5px;
+  /*font-family: Merriweather, 'Open Sans', Arial, sans-serif; */
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+/* line 280, ../scss/naada.sass */
+.naada-button:hover {
+  display: inline-block;
+  position: relative;
+  margin: 5px;
+  /*font-family: Merriweather, 'Open Sans', Arial, sans-serif; */
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+/* line 283, ../scss/naada.sass */
+.grey-button {
+  color: white !important;
+  background-color: #3f3f3f;
+}
+/* line 286, ../scss/naada.sass */
+.grey-button:hover {
+  color: white !important;
+  background-color: #1f1f1f;
+}
+
+/* line 290, ../scss/naada.sass */
+.green-button {
+  color: white !important;
+  background-color: #b3ba1c;
+}
+/* line 293, ../scss/naada.sass */
+.green-button:hover {
+  color: white !important;
+  background-color: #a6ad1b;
+}
+
+/* line 301, ../scss/naada.sass */
+.orange-button {
+  color: white !important;
+  background-color: #f7ad00;
+}
+
+/* line 304, ../scss/naada.sass */
+.footer-widgets a.orange-button, .rev_slider a.orange-button {
+  border: 1px solid white;
+}
+
+/* line 307, ../scss/naada.sass */
+.orange-button:hover {
+  color: white !important;
+  background-color: #fabd30;
+}
+
+/* line 312, ../scss/naada.sass */
+.naada-button.small {
+  font-size: 11px;
+  line-height: 14px;
+  padding: 5px 10px;
+}
+/* line 316, ../scss/naada.sass */
+.naada-button.medium {
+  font-size: 16px;
+  line-height: 16px;
+  padding: 12px 20px;
+}
+/* line 320, ../scss/naada.sass */
+.naada-button.large {
+  font-size: 21px;
+  line-height: 21px;
+  padding: 18px 30px;
+}
+
+/* end buttons */
+/* line 327, ../scss/naada.sass */
+.button, .entry-content a.button {
+  color: white;
+  font-weight: bold;
+  background-color: #f7ad00;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+/* line 334, ../scss/naada.sass */
+.button:hover, .entry-content a.button:hover {
+  background-color: #fabd30;
+}
+
+/* line 338, ../scss/naada.sass */
+button:hover {
+  background-color: #e19d00;
+}
+
+/* line 342, ../scss/naada.sass */
+input:hover[type="button"], input:hover[type="reset"], input:hover[type="submit"] {
+  background-color: #e19d00;
+}
+
+/* line 345, ../scss/naada.sass */
+.button:hover {
+  background-color: #e19d00;
+}
+
+/* line 349, ../scss/naada.sass */
+input[type="search"] {
+  margin-bottom: 20px;
+}
+/* line 351, ../scss/naada.sass */
+input[type="checkbox"], input[type="image"], input[type="radio"] {
+  margin-right: 5px;
+}
+
+/* line 354, ../scss/naada.sass */
+:focus {
+  outline-color: white;
+}
+
+/* line 357, ../scss/naada.sass */
+.archive-pagination li a {
+  background-color: #616161;
+}
+
+/* line 360, ../scss/naada.sass */
+span.dropcap {
+  float: left;
+  font-size: 50px;
+  line-height: 44px;
+  padding: 2px 5px 0 3px;
+}
+
+/* line 366, ../scss/naada.sass */
+.twocol {
+  width: 45%;
+  float: left;
+  margin-right: 2.5%;
+}
+/* line 370, ../scss/naada.sass */
+.twocol:nth-of-type(2)::after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* line 377, ../scss/naada.sass */
+.row {
+  float: left;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+/* Header */
+@media only screen and (min-width: 1200px) {
+  /* line 384, ../scss/naada.sass */
+  .site-container {
+    padding-top: 43px;
+  }
+}
+@media only screen and (min-width: 800px) and (max-width: 1200px) {
+  /* line 384, ../scss/naada.sass */
+  .site-container {
+    padding-top: 86px;
+  }
+}
+
+/* line 390, ../scss/naada.sass */
+.site-header {
+  min-height: 80px;
+}
+/* line 392, ../scss/naada.sass */
+.site-header .wrap {
+  padding: 8px 0;
+}
+
+/* line 395, ../scss/naada.sass */
+.title-area {
+  padding: 7px 0;
+}
+
+/* end Header */
+/* Navigation */
+/* line 402, ../scss/naada.sass */
+.nav-primary {
+  background-color: #b3ba1c;
+  z-index: 999;
+  position: fixed;
+  width: 100%;
+}
+
+/* line 408, ../scss/naada.sass */
+.genesis-nav-menu {
+  font-size: 13px;
+  color: #666666;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* line 414, ../scss/naada.sass */
+.menu-secondary {
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 400px) {
+  /* line 418, ../scss/naada.sass */
+  #menu-secondary-navigation li {
+    font-size: 10px;
+  }
+}
+/* line 422, ../scss/naada.sass */
+ul.menu-primary > li.menu-item-has-children > a:after {
+  content: "\f502";
+  display: inline-block;
+  font: normal 12px/1 "Genericons";
+  vertical-align: bottom;
+  -webkit-font-smoothing: antialiased;
+  padding-left: 5px;
+}
+/* line 429, ../scss/naada.sass */
+ul.menu-primary ul > li.menu-item-has-children > a:after {
+  content: "\f502";
+  display: inline-block;
+  font: normal 12px/1 "Genericons";
+  vertical-align: bottom;
+  -webkit-font-smoothing: antialiased;
+  padding-left: 5px;
+  content: "\f501";
+  vertical-align: text-bottom;
+  padding-bottom: 2px;
+}
+
+/* line 440, ../scss/naada.sass */
+.genesis-nav-menu a {
+  padding: 15px 6px;
+}
+
+/* line 444, ../scss/naada.sass */
+.nav-primary .genesis-nav-menu a:hover, .nav-primary .genesis-nav-menu .current-menu-item > a {
+  color: #e8e8e8;
+}
+/* line 446, ../scss/naada.sass */
+.nav-primary .genesis-nav-menu .sub-menu {
+  z-index: 500;
+}
+/* line 447, ../scss/naada.sass */
+.nav-primary .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
+  color: white;
+}
+/* line 450, ../scss/naada.sass */
+.nav-primary .genesis-nav-menu .sub-menu a {
+  background-color: white;
+  color: #b3ba1c;
+  border: 1px solid #e5e5e5;
+  border-top: none;
+  font-size: 13px;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+/* line 459, ../scss/naada.sass */
+.genesis-nav-menu .sub-menu .current-menu-item a {
+  background-color: white;
+  color: #b3ba1c;
+  border: 1px solid #e5e5e5;
+  border-top: none;
+  font-size: 13px;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+/* line 469, ../scss/naada.sass */
+.menu-primary .sub-menu a:hover, .menu-primary .sub-menu .current-menu-item a:hover {
+  background-color: #b3ba1c;
+  color: white;
+}
+
+/* line 473, ../scss/naada.sass */
+.header-image .site-title > a {
+  background: url("../images/logo.png") no-repeat left;
+  width: 360px;
+}
+
+/* line 477, ../scss/naada.sass */
+#menu-ytt-submenu li a, #menu-ytt-submenu-french li a {
+  font-size: 1.2em;
+}
+
+/* line 480, ../scss/naada.sass */
+#menu-ytt-submenu li a:hover:after, #menu-ytt-submenu-french li a:hover:after {
+  content: "\f501";
+  display: inline-block;
+  font: normal 14px/1 "Genericons";
+  vertical-align: middle;
+  -webkit-font-smoothing: antialiased;
+  padding-left: 5px;
+}
+
+/* line 488, ../scss/naada.sass */
+.shiftnav-loading {
+  display: none !important;
+}
+
+/* end Navigation */
+/* Posts & Pages */
+/* line 495, ../scss/naada.sass */
+.entry-title {
+  margin-bottom: 30px;
+}
+
+/* line 498, ../scss/naada.sass */
+.post h1.entry-title {
+  font-size: 24px;
+}
+
+/* line 502, ../scss/naada.sass */
+.archive-pagination li a:hover, .archive-pagination .active a {
+  background-color: #f7ad00;
+}
+
+/* line 505, ../scss/naada.sass */
+.entry-meta {
+  font-weight: bold;
+  display: none;
+}
+
+/* removed from article and courses display */
+/* line 511, ../scss/naada.sass */
+.wp-caption-text {
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* line 515, ../scss/naada.sass */
+.widget-title {
+  font-size: 20px;
+}
+
+/* line 518, ../scss/naada.sass */
+.home .site-inner {
+  padding-top: 0;
+}
+@media only screen and (max-width: 800px) {
+  /* line 518, ../scss/naada.sass */
+  .home .site-inner {
+    padding: 0;
+  }
+}
+
+/* line 523, ../scss/naada.sass */
+.forcefullwidth_wrapper_tp_banner {
+  display: block;
+  clear: both;
+  margin-bottom: 28px !important;
+}
+
+/* line 528, ../scss/naada.sass */
+.naada-accordion {
+  margin-bottom: 40px !important;
+}
+
+/* line 531, ../scss/naada.sass */
+.naada-teacher {
+  float: right;
+  margin: 0 0 20px 20px;
+}
+/* line 534, ../scss/naada.sass */
+.naada-teacher img {
+  float: left;
+  padding-right: 5px;
+}
+
+/* line 538, ../scss/naada.sass */
+div.naada-question {
+  margin-bottom: 28px;
+}
+
+/* line 541, ../scss/naada.sass */
+.video-wrapper {
+  position: relative;
+  padding-bottom: 52%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+  border: 1px solid #e5e5e5;
+  margin-bottom: 20px;
+}
+/* line 549, ../scss/naada.sass */
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 556, ../scss/naada.sass */
+table.naada-table tbody {
+  border: none;
+}
+
+/* line 559, ../scss/naada.sass */
+.naada-paypal-button input {
+  border: none;
+  padding: 0;
+}
+
+/* line 563, ../scss/naada.sass */
+img.resource-boxes {
+  width: 220px;
+  float: left;
+  margin: 5px 5px 0 0;
+}
+
+/* Tablepress styles */
+/* line 570, ../scss/naada.sass */
+.naada-pricing {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.3;
+}
+/* line 574, ../scss/naada.sass */
+.naada-pricing tbody {
+  background-color: whitesmoke;
+}
+/* line 576, ../scss/naada.sass */
+.naada-pricing td {
+  padding: 20px !important;
+  width: 50%;
+}
+/* line 579, ../scss/naada.sass */
+.naada-pricing ul {
+  font-size: 14px;
+  font-weight: normal;
+}
+/* line 582, ../scss/naada.sass */
+.naada-pricing p {
+  font-size: 14px;
+  font-weight: normal;
+  margin: 14px 0;
+}
+
+/* line 587, ../scss/naada.sass */
+.naada-pricing-amount {
+  font-size: 30px;
+  line-height: 0.8;
+}
+
+/* line 592, ../scss/naada.sass */
+h2.tablepress-table-name {
+  font-size: 24px;
+}
+/* line 594, ../scss/naada.sass */
+h2.ld-entry-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* LearnDash styles */
+/* line 600, ../scss/naada.sass */
+#learndash_uploaded_assignments h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* line 604, ../scss/naada.sass */
+.learndash input.button-primary {
+  margin-top: 10px;
+}
+
+/* line 607, ../scss/naada.sass */
+.widget_sfwd-courses-widget h4 a, .widget_sfwd_ldcourseinfo #ld_course_info_mycourses_list h4 {
+  font-size: 16px;
+}
+
+/* line 611, ../scss/naada.sass */
+.widget_ldcourseinfo .ld-course-info-my-courses h2 {
+  font-size: 15px;
+}
+/* line 613, ../scss/naada.sass */
+.widget_ldcourseinfo .ld-course-info-my-courses img {
+  display: none;
+}
+/* line 615, ../scss/naada.sass */
+.widget_ldcourseinfo .ld-course-info-my-courses:before {
+  content: "• ";
+}
+
+/* line 618, ../scss/naada.sass */
+.widget_sfwd-courses-widget li {
+  padding-bottom: 0;
+}
+
+/* Ubergrid styles */
+/* line 623, ../scss/naada.sass */
+div.uber-grid-filters > div {
+  margin-right: 5px !important;
+}
+/* line 624, ../scss/naada.sass */
+div.uber-grid-filters > div a {
+  font-size: 14px !important;
+}
+
+/* line 628, ../scss/naada.sass */
+.page-id-198 .uber-grid-filters, .page-id-5231 .uber-grid-filters {
+  display: none !important;
+}
+
+/* Gravity Forms styles */
+/* line 633, ../scss/naada.sass */
+.gform_wrapper input {
+  border: 1px solid #dddddd;
+}
+/* line 635, ../scss/naada.sass */
+.gform_wrapper input[type="submit"] {
+  padding: 16px 24px;
+  border: none;
+}
+
+/*  end Posts & Pages */
+/* fix for framework update */
+/* line 643, ../scss/naada.sass */
+.widget ol > li {
+  text-indent: 0;
+}
+
+/* GF fix for radio buttons overflow */
+/* line 649, ../scss/naada.sass */
+.gform_wrapper ul.gfield_checkbox li, .gform_wrapper ul.gfield_radio li {
+  overflow: visible !important;
+}
+
+/* Genericons */
+/* line 654, ../scss/naada.sass */
+.genericon {
+  vertical-align: text-bottom;
+}
+
+/* line 657, ../scss/naada.sass */
+.naada-icon:before {
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  font: normal 16px/1 "Genericons";
+  vertical-align: text-bottom;
+}
+
+/* line 663, ../scss/naada.sass */
+.naada-facebook-icon:before {
+  content: "\f203";
+  /*color: #3b5998; */
+}
+
+/* line 667, ../scss/naada.sass */
+.naada-twitter-icon:before {
+  content: "\f202";
+}
+
+/* line 670, ../scss/naada.sass */
+.naada-instagram-icon:before {
+  content: "\f215";
+}
+
+/* Slideshow */
+/* line 675, ../scss/naada.sass */
+.naada-slide-box1 {
+  font-size: 14px;
+  color: white;
+}
+/* line 678, ../scss/naada.sass */
+.naada-slide-box1 p {
+  margin: 0 0 10px;
+}
+/* line 680, ../scss/naada.sass */
+.naada-slide-box1 a.naada-slidebox-link {
+  color: #999999;
+  border-bottom: 1px dotted #999999;
+}
+/* line 683, ../scss/naada.sass */
+.naada-slide-box1 a.naada-slidebox-link:hover {
+  color: white;
+}
+/* line 685, ../scss/naada.sass */
+.naada-slide-box1 h5 {
+  color: white;
+  margin: 0 0 10px 0;
+  font-weight: bold;
+}
+
+/* line 690, ../scss/naada.sass */
+.naada-slide-image {
+  border: 3px solid white;
+}
+
+/* Footer */
+/* line 696, ../scss/naada.sass */
+.footer-widgets, .woocommerce .footer-widgets {
+  background-color: #b3ba1c;
+  color: white;
+}
+/* line 699, ../scss/naada.sass */
+.footer-widgets a, .woocommerce .footer-widgets a {
+  color: white;
+  border-bottom: 1px dotted white;
+}
+/* line 702, ../scss/naada.sass */
+.footer-widgets a.social, .woocommerce .footer-widgets a.social {
+  padding: 0 0.25rem;
+  border-bottom: 0;
+}
+/* line 705, ../scss/naada.sass */
+.footer-widgets a.social:hover img, .woocommerce .footer-widgets a.social:hover img {
+  opacity: 0.8;
+}
+/* line 707, ../scss/naada.sass */
+.footer-widgets a.social img, .woocommerce .footer-widgets a.social img {
+  transition: opacity 0.25s ease-in-out;
+  -moz-transition: opacity 0.25s ease-in-out;
+  -webkit-transition: opacity 0.25s ease-in-out;
+}
+/* line 711, ../scss/naada.sass */
+.footer-widgets button, .footer-widgets input[type="button"], .footer-widgets input[type="reset"], .footer-widgets input[type="submit"], .footer-widgets .button, .footer-widgets input.button, .woocommerce .footer-widgets button, .woocommerce .footer-widgets input[type="button"], .woocommerce .footer-widgets input[type="reset"], .woocommerce .footer-widgets input[type="submit"], .woocommerce .footer-widgets .button, .woocommerce .footer-widgets input.button {
+  font-weight: bold;
+  display: inline-block;
+  position: relative;
+  margin: 5px;
+  /*font-family: Merriweather, 'Open Sans', Arial, sans-serif; */
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  color: white !important;
+  background-color: #f7ad00;
+  border: 1px solid white;
+  padding: 16px 24px;
+}
+/* line 717, ../scss/naada.sass */
+.footer-widgets button:hover, .footer-widgets input[type="button"]:hover, .footer-widgets input[type="reset"]:hover, .footer-widgets input[type="submit"]:hover, .footer-widgets .button:hover, .footer-widgets input.button:hover, .woocommerce .footer-widgets button:hover, .woocommerce .footer-widgets input[type="button"]:hover, .woocommerce .footer-widgets input[type="reset"]:hover, .woocommerce .footer-widgets input[type="submit"]:hover, .woocommerce .footer-widgets .button:hover, .woocommerce .footer-widgets input.button:hover {
+  background-color: #fabd30;
+  color: white;
+  display: inline-block;
+  position: relative;
+  margin: 5px;
+  /*font-family: Merriweather, 'Open Sans', Arial, sans-serif; */
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+/* line 722, ../scss/naada.sass */
+.site-footer {
+  background-color: #90980e;
+  background-size: cover;
+  color: white;
+  padding: 1.5rem 0;
+}
+/* line 727, ../scss/naada.sass */
+.site-footer a {
+  color: white;
+}
+/* line 729, ../scss/naada.sass */
+.site-footer a:hover {
+  color: #d6da9d;
+}
+
+/* line 732, ../scss/naada.sass */
+.footer-widgets input {
+  border: 1px solid white;
+  border-radius: 3px;
+}
+
+/* end Footer */
+/* HOMEPAGE Specific Style */
+/* line 740, ../scss/naada.sass */
+body.home .site-inner {
+  max-width: 100%;
+}
+/* line 742, ../scss/naada.sass */
+body.home .site-inner article.entry {
+  padding: 0;
+  margin-bottom: 1rem;
+}
+/* line 745, ../scss/naada.sass */
+body.home .site-inner .homeContentWrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 3rem;
+}
+@media only screen and (max-width: 400px) {
+  /* line 745, ../scss/naada.sass */
+  body.home .site-inner .homeContentWrap {
+    padding: 2rem 2rem;
+  }
+}
+/* line 751, ../scss/naada.sass */
+body.home .site-inner .homeContentWrap h3.schedule {
+  float: left;
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+/* line 755, ../scss/naada.sass */
+body.home .site-inner .homeContentWrap a.fullSched {
+  background: whitesmoke;
+  border: 1px solid #dedede;
+  border-radius: 5px;
+  padding: 0.25rem;
+  font-size: 0.9rem;
+  color: #aeaeae;
+  margin: 0 0 0 10px;
+  display: inline-block;
+  float: left;
+}
+/* line 765, ../scss/naada.sass */
+body.home .site-inner .homeContentWrap a.fullSched:hover {
+  cursor: pointer;
+  background: #f7ad00;
+  color: white;
+  border: 1px solid #f7ad00;
+}
+/* line 770, ../scss/naada.sass */
+body.home .site-inner .homeContentWrap.online-courses {
+  padding: 1rem 3rem 3rem;
+}
+@media only screen and (max-width: 400px) {
+  /* line 770, ../scss/naada.sass */
+  body.home .site-inner .homeContentWrap.online-courses {
+    padding: 1rem 2rem 2rem;
+  }
+}
+/* line 774, ../scss/naada.sass */
+body.home .site-inner .homeContentWrap .greenbox {
+  background-color: #b3ba1c;
+  color: white;
+  padding: 10px;
+  margin-bottom: 1rem;
+  background-color: #b3ba1c;
+}
+/* line 782, ../scss/naada.sass */
+body.home .site-inner .homeContentWrap .greenbox h3 {
+  font-size: 1.35rem;
+  color: white;
+  padding: 10px;
+  margin-bottom: 0;
+  text-shadow: 1px 1px 1px rgba(0, 0, 1, 0.3);
+}
+/* line 788, ../scss/naada.sass */
+body.home .site-inner .homeContentWrap .greenbox.app {
+  background: url("../images/3month-bg1.jpg") no-repeat 0% 50%;
+  background-size: cover;
+  position: relative;
+}
+/* line 792, ../scss/naada.sass */
+body.home .site-inner .homeContentWrap .greenbox.app::before {
+  content: "";
+  width: 50px;
+  height: 80px;
+  background: url("../images/iphone.png") no-repeat top left;
+  position: absolute;
+  left: 10px;
+  top: 5px;
+  background-size: contain;
+}
+/* line 801, ../scss/naada.sass */
+body.home .site-inner .homeContentWrap .greenbox.app h3 {
+  color: white;
+  text-shadow: 1px 1px 1px rgba(0, 0, 1, 0.3);
+  padding: 10px 10px 10px 50px;
+}
+/* line 805, ../scss/naada.sass */
+body.home .site-inner .homeContentWrap .sell {
+  width: 47%;
+  float: left;
+  margin: 2rem 3% 2rem 0;
+}
+/* line 809, ../scss/naada.sass */
+body.home .site-inner .homeContentWrap .sell p {
+  float: left;
+  width: 60%;
+}
+/* line 812, ../scss/naada.sass */
+body.home .site-inner .homeContentWrap .sell .greenbox + p {
+  float: left;
+  width: 35%;
+}
+@media only screen and (max-width: 525px) {
+  /* line 812, ../scss/naada.sass */
+  body.home .site-inner .homeContentWrap .sell .greenbox + p {
+    width: 100%;
+    float: none;
+  }
+  /* line 818, ../scss/naada.sass */
+  body.home .site-inner .homeContentWrap .sell .greenbox + p + p {
+    float: left;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* line 822, ../scss/naada.sass */
+  body.home .site-inner .homeContentWrap .sell {
+    width: 100%;
+    margin: 2rem 3% 0 0;
+  }
+}
+/* line 825, ../scss/naada.sass */
+body.home .site-inner .homeContentWrap .login-left {
+  float: left;
+  width: 20%;
+  margin-right: 5%;
+}
+/* line 829, ../scss/naada.sass */
+body.home .site-inner .homeContentWrap .login-right {
+  float: left;
+  width: 75%;
+}
+/* line 832, ../scss/naada.sass */
+body.home .site-inner .homeContentWrap .login-right div.signin {
+  background: #e1e1e1;
+  border-radius: 10px;
+  padding: 2rem 2rem 1rem;
+  float: left;
+  width: 100%;
+}
+/* line 838, ../scss/naada.sass */
+body.home .site-inner .homeContentWrap .login-right h3 {
+  background: #f4f4f4;
+  padding: 0.75rem 1.5rem;
+  display: inline-block;
+  margin: 0 0 0 2rem;
+  color: #7b7b7b;
+  border-radius: 10px 10px 0 0;
+}
+/* line 845, ../scss/naada.sass */
+body.home .site-inner .homeContentWrap .login-right .form-group {
+  float: left;
+  margin: 0 3% 2% 0;
+}
+/* line 848, ../scss/naada.sass */
+body.home .site-inner .homeContentWrap .login-right .form-group:nth-of-type(1), body.home .site-inner .homeContentWrap .login-right .form-group .form-group:nth-of-type(2) {
+  width: 40%;
+}
+/* line 850, ../scss/naada.sass */
+body.home .site-inner .homeContentWrap .login-right .form-group:nth-of-type(3) {
+  width: 15%;
+  margin: 1.65rem 0 1rem;
+}
+/* line 853, ../scss/naada.sass */
+body.home .site-inner .homeContentWrap .login-right .form-group input[type="submit"] {
+  float: right;
+}
+/* line 855, ../scss/naada.sass */
+body.home .site-inner .homeContentWrap .login-right ul li {
+  list-style-type: none;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+/* line 863, ../scss/naada.sass */
+section.module.parallax {
+  width: 100%;
+  padding: 4rem 0;
+  position: relative;
+}
+/* line 867, ../scss/naada.sass */
+section.module.parallax .parallaxContent {
+  margin: 0 auto;
+  max-width: 1200px;
+  text-align: center;
+}
+/* line 871, ../scss/naada.sass */
+section.module.parallax .parallaxContent h2 {
+  color: white;
+  text-align: center;
+  position: relative;
+}
+/* line 875, ../scss/naada.sass */
+section.module.parallax .parallaxContent h2 span {
+  border-bottom: 5px solid #b3ba1c;
+}
+/* line 877, ../scss/naada.sass */
+section.module.parallax .parallaxContent h3 {
+  color: white;
+  font-size: 1.45rem;
+  font-weight: 600;
+}
+/* line 881, ../scss/naada.sass */
+section.module.parallax .parallaxContent .block {
+  width: 45%;
+  margin: 3rem 1rem 1rem;
+  float: left;
+  color: white;
+  font-size: 1.2rem;
+  text-align: left;
+}
+@media only screen and (max-width: 640px) {
+  /* line 889, ../scss/naada.sass */
+  section.module.parallax .parallaxContent .block {
+    width: 100%;
+    padding: 1rem 2rem 0;
+    margin: 2rem 0 0;
+  }
+  /* line 893, ../scss/naada.sass */
+  section.module.parallax .parallaxContent .block p {
+    padding: 0;
+  }
+}
+/* line 895, ../scss/naada.sass */
+section.module.parallax.parallax-1 .parallaxContent .block.right p {
+  padding-top: 2.3rem;
+}
+@media only screen and (max-width: 640px) {
+  /* line 898, ../scss/naada.sass */
+  section.module.parallax.parallax-1 .parallaxContent .block.right, section.module.parallax.parallax-2 .parallaxContent .block.right {
+    margin: 0;
+  }
+  /* line 900, ../scss/naada.sass */
+  section.module.parallax.parallax-1 .parallaxContent .block.right p, section.module.parallax.parallax-2 .parallaxContent .block.right p {
+    padding-top: 0;
+  }
+}
+/* line 902, ../scss/naada.sass */
+section.module.parallax div.downArrow {
+  position: absolute;
+  bottom: -21px;
+  left: 48%;
+}
+@media only screen and (min-width: 375px) and (max-width: 449px) {
+  /* line 902, ../scss/naada.sass */
+  section.module.parallax div.downArrow {
+    left: 42%;
+  }
+}
+@media only screen and (max-width: 374px) {
+  /* line 902, ../scss/naada.sass */
+  section.module.parallax div.downArrow {
+    left: 40%;
+  }
+}
+/* line 910, ../scss/naada.sass */
+section.module.parallax div.downArrow a {
+  display: inline-block;
+  border-radius: 50%;
+}
+/* line 913, ../scss/naada.sass */
+section.module.parallax div.downArrow .bottom {
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #b3ba1c;
+  border-radius: 50%;
+  margin-left: 0.75em;
+}
+/* line 920, ../scss/naada.sass */
+section.module.parallax div.downArrow .bottom:after {
+  content: "";
+  display: inline-block;
+  margin-top: 9px;
+  width: 12px;
+  height: 12px;
+  border-top: 5px solid white;
+  border-right: 5px solid white;
+  -moz-transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+/* line 932, ../scss/naada.sass */
+.onlineEducation {
+  text-align: center;
+  padding: 2rem 0;
+}
+/* line 935, ../scss/naada.sass */
+.onlineEducation a {
+  color: #b3ba1c;
+}
+
+/* line 938, ../scss/naada.sass */
+section.module.parallax-1 {
+  background: url("../images/online-yoga-education.jpg") 50% 0 repeat fixed;
+}
+@media only screen and (max-width: 400px) {
+  /* line 938, ../scss/naada.sass */
+  section.module.parallax-1 {
+    background: url("../images/online-yoga-education-mobile.jpg") 47% 40% repeat;
+    background-size: cover;
+  }
+}
+
+/* line 944, ../scss/naada.sass */
+section.module.parallax-2 {
+  background: url("../images/nytt-bg.jpg") 50% 0 repeat fixed;
+}
+@media only screen and (max-width: 400px) {
+  /* line 944, ../scss/naada.sass */
+  section.module.parallax-2 {
+    background: url("../images/nytt-bg-mobile.jpg") 55% 35% repeat;
+    background-size: cover;
+  }
+}
+/* line 949, ../scss/naada.sass */
+section.module.parallax-2 .parallaxContent .block .right p {
+  padding-top: 0;
+}
+
+/* line 952, ../scss/naada.sass */
+.online-carousel, .nytt-carousel {
+  margin: 3rem 0;
+}
+/* line 954, ../scss/naada.sass */
+.online-carousel div.courseImage, .nytt-carousel div.courseImage {
+  float: none !important;
+  width: 288px;
+  margin: 0 auto 1.5rem !important;
+}
+/* line 958, ../scss/naada.sass */
+.online-carousel div.courseImage img, .nytt-carousel div.courseImage img {
+  border: 1px solid #e5e5e5;
+  float: none;
+  padding: 6px;
+  margin: 0;
+  width: 288px;
+  height: 178px;
+  border-radius: 5px;
+}
+/* line 966, ../scss/naada.sass */
+.online-carousel h2, .nytt-carousel h2 {
+  margin-bottom: 0;
+}
+/* line 968, ../scss/naada.sass */
+.online-carousel h2 a, .nytt-carousel h2 a {
+  display: block;
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+/* line 973, ../scss/naada.sass */
+.online-carousel span.trainer-name a, .nytt-carousel span.trainer-name a {
+  display: inline-block;
+  font-size: 1.1rem;
+}
+/* line 976, ../scss/naada.sass */
+.online-carousel .slick-slide, .nytt-carousel .slick-slide {
+  width: 365px;
+  text-align: center;
+}
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  /* line 980, ../scss/naada.sass */
+  .online-carousel .slick-slide, .nytt-carousel .slick-slide {
+    width: 400px;
+    margin: 0 1rem 0;
+  }
+}
+@media only screen and (min-width: 780px) and (max-width: 899px) {
+  /* line 984, ../scss/naada.sass */
+  .online-carousel .slick-slide, .nytt-carousel .slick-slide {
+    width: 330px;
+  }
+}
+@media only screen and (min-width: 680px) and (max-width: 779px) {
+  /* line 987, ../scss/naada.sass */
+  .online-carousel .slick-slide, .nytt-carousel .slick-slide {
+    width: 305px;
+  }
+}
+@media only screen and (min-width: 520px) and (max-width: 679px) {
+  /* line 990, ../scss/naada.sass */
+  .online-carousel .slick-slide, .nytt-carousel .slick-slide {
+    width: 460px;
+    margin: 0 2rem;
+  }
+}
+@media only screen and (min-width: 450px) and (max-width: 519px) {
+  /* line 994, ../scss/naada.sass */
+  .online-carousel .slick-slide, .nytt-carousel .slick-slide {
+    width: 400px;
+    margin: 0 2rem;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 449px) {
+  /* line 998, ../scss/naada.sass */
+  .online-carousel .slick-slide, .nytt-carousel .slick-slide {
+    width: 320px;
+    margin: 0 1rem;
+  }
+}
+@media only screen and (max-width: 374px) {
+  /* line 1002, ../scss/naada.sass */
+  .online-carousel .slick-slide, .nytt-carousel .slick-slide {
+    width: 270px;
+    margin: 0;
+    padding: 0 !important;
+  }
+  /* line 1006, ../scss/naada.sass */
+  .online-carousel div.healcode-image-area img, .nytt-carousel div.healcode-image-area img {
+    width: 250px;
+    height: 153px;
+  }
+}
+
+/* Promo box */
+/* line 1013, ../scss/naada.sass */
+.naada-promo-box {
+  border: 1px solid #e5e5e5;
+  margin-bottom: 20px;
+}
+
+/* line 1017, ../scss/naada.sass */
+.naada-promo-box-header {
+  display: inline-block;
+  width: 100%;
+  padding: 15px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #b3ba1c;
+}
+
+/* line 1026, ../scss/naada.sass */
+.naada-promo-box-body {
+  display: inline-block;
+  padding: 15px;
+}
+
+/* line 1030, ../scss/naada.sass */
+.naada-promo-box-dates {
+  display: inline-block;
+  padding: 0 15px 15px;
+  font-weight: bold;
+}
+
+/* end Promo box */
+/* Andrew's HealCode styles */
+/* Family */
+/* line 1042, ../scss/naada.sass */
+tr.kids_enfants_7_11 .class_level span, tr.kids_enfants_4_6 .class_level span, tr.prenatal .class_level span, tr.acro_yoga .class_level span {
+  color: white;
+  text-transform: uppercase;
+  background: #8284ad;
+  padding: 5px 10px;
+}
+/* line 1047, ../scss/naada.sass */
+tr.meditation .class_level span, tr.restorative_101 .class_level span, tr.restaurateur_cou_epaules .class_level span, tr.restaurateur .class_level span, tr.restaurateur_hanches_dos .class_level span, tr.yoga_wall_restorative .class_level span, tr.yin_yoga .class_level span, tr.ayurveda .class_level span, tr.advanced_anatomy .class_level span {
+  color: white;
+  text-transform: uppercase;
+  background: #f1e33d;
+  padding: 5px 10px;
+}
+/* line 1052, ../scss/naada.sass */
+tr.energizer .class_level span, tr.rise_and_shine .class_level span, tr.naada_level_1 .class_level span, tr.intro_to_yoga .class_level span, tr.yoga_wall_intro .class_level span, tr.community_yoga_for_healthy_aging .class_level span, tr.community_class .class_level span {
+  color: white;
+  text-transform: uppercase;
+  background: #b3ba1e;
+  padding: 5px 10px;
+}
+/* line 1057, ../scss/naada.sass */
+tr.naada_level_2 .class_level span, tr.yoga_wall .class_level span, tr.shoulder_openers .class_level span, tr.hip_openers .class_level span, tr.back_bends .class_level span, tr.yoga_wall .class_level span, tr.yoga_wall_hip_openers .class_level span {
+  color: white;
+  text-transform: uppercase;
+  background: #97c9ea;
+  padding: 5px 10px;
+}
+/* line 1062, ../scss/naada.sass */
+tr.naada_live_by_donation .class_level span, tr.live_workshop_level_2_3 .class_level span, tr.naada_live .class_level span, tr.naada_level_2_3 .class_level span {
+  color: white;
+  text-transform: uppercase;
+  background: #f59c00;
+  padding: 5px 10px;
+}
+/* line 1067, ../scss/naada.sass */
+tr.kids_enfants_5_10 .class_level span, tr.fete_de_rue_le_mile_end_fete_la_bonne_vie_en_sante .class_level span {
+  color: white;
+  text-transform: uppercase;
+  background: #8284ad;
+  padding: 5px 10px;
+}
+/* line 1072, ../scss/naada.sass */
+tr.yoga_for_bone_health .class_level span, tr.yoga_for_women_yoga_pour_femmes .class_level span, tr.inversions .class_level span, tr.yoga_for_men_yoga_pour_hommes .class_level span, tr.intro_to_pranayama .class_level span, tr.prenatal .class_level span, tr.soins_du_dos_back_care .class_level span, tr.back_care .class_level span, tr.yoga_intro .class_level span {
+  color: white;
+  text-transform: uppercase;
+  background: #f285a2;
+  padding: 5px 10px;
+}
+/* line 1077, ../scss/naada.sass */
+tr.decoding_the_sun_salutations_decoder_les_salutations_au_soleil .class_level span, tr.finding_the_earth_through_standing_poses_connecter_avec_le_sol_lors_des_postures_debout .class_level span, tr.get_to_the_core_twisting_in_standing_poses_droit_au_coeur_les_torsions_en_postures_debout .class_level span {
+  color: white;
+  text-transform: uppercase;
+  background: #d34f3f;
+  padding: 5px 10px;
+}
+
+/* Therapeutic */
+/* beginner */
+/* Intermediate */
+/* Advanced */
+/* Family */
+/* Specialty Classes */
+/* Workshops */
+/* line 1098, ../scss/naada.sass */
+.Enrollment td.class_level span.class_level {
+  color: white;
+  text-transform: uppercase;
+  background: #d34f3f;
+  padding: 5px 10px;
+}
+/* line 1103, ../scss/naada.sass */
+.Enrollment.assisting_101 td.class_level span.class_level, .Enrollment.ayurveda td.class_level span.class_level, .Enrollment.asana_103 td.class_level span.class_level, .Enrollment.back_care td.class_level span.class_level, .Enrollment.meditation_101 td.class_level span.class_level, .Enrollment.relax_and_renew td.class_level span.class_level, .Enrollment.pranayama_101 td.class_level span.class_level, .Enrollment.yoga_wall td.class_level span.class_level, .Enrollment.naada_101 td.class_level span.class_level, .Enrollment.psychology_of_yoga td.class_level span.class_level {
+  color: white;
+  text-transform: uppercase;
+  background: #909090;
+  padding: 5px 10px;
+}
+
+/* NYTT */
+/*Course Descriptions Styles */
+/* line 1113, ../scss/naada.sass */
+.naada-class-categories {
+  padding: 10px;
+  text-transform: uppercase;
+  color: white;
+}
+
+/* line 1118, ../scss/naada.sass */
+.naada-class-category-desc {
+  margin: 0 0 10px 10px;
+  font-style: italic;
+}
+
+/* line 1122, ../scss/naada.sass */
+.naada-therapeutic {
+  background: #e3d042;
+}
+
+/* line 1125, ../scss/naada.sass */
+.naada-beginner {
+  background: #b3ba1e;
+}
+
+/* line 1128, ../scss/naada.sass */
+.naada-intermediate {
+  background: #97c9ea;
+}
+
+/* line 1131, ../scss/naada.sass */
+.naada-advanced {
+  background: #f59c00;
+}
+
+/* line 1134, ../scss/naada.sass */
+.naada-specialty-classes {
+  background: #f285a2;
+}
+
+/* line 1137, ../scss/naada.sass */
+.naada-family {
+  background: #8284ad;
+}
+
+/* Mobile styles for Full Schedule */
+@media only screen and (max-width: 400px) {
+  /* line 1144, ../scss/naada.sass */
+  body.page-id-7 div.healcode.schedule td .hc_starttime, body.page-id-7 div.healcode.schedule td .hc_endtime {
+    display: block;
+    float: left;
+    line-height: normal;
+  }
+  /* line 1148, ../scss/naada.sass */
+  body.page-id-7 div.healcode.schedule td.mbo_class {
+    line-height: normal;
+  }
+  /* line 1150, ../scss/naada.sass */
+  body.page-id-7 div.healcode.schedule a.hc-button.signup_now, body.page-id-7 div.healcode.schedule div.healcode input.hc-button {
+    font-size: 10px;
+    line-height: normal;
+    font-weight: normal;
+    padding: 4px 2px;
+  }
+}
+/* end Andrew's HealCode styles */
+/* line 1160, ../scss/naada.sass */
+.clearfix {
+  display: inline-block;
+}
+/* line 1161, ../scss/naada.sass */
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+/* responsive image grid */
+/* line 1172, ../scss/naada.sass */
+img.naada-grid {
+  margin: 0 5px 5px 0;
+  width: 133px;
+  float: left;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1200px) {
+  /* line 1180, ../scss/naada.sass */
+  img.naada-grid {
+    width: 103px;
+  }
+}
+@media only screen and (max-width: 960px) {
+  /* line 1184, ../scss/naada.sass */
+  .naada-teacher {
+    float: none;
+  }
+  /* line 1186, ../scss/naada.sass */
+  .naada-teacher img {
+    float: none;
+  }
+
+  /* line 1188, ../scss/naada.sass */
+  img.naada-grid {
+    width: 137px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  /* line 1192, ../scss/naada.sass */
+  img.naada-grid {
+    width: 113px;
+  }
+
+  /* line 1194, ../scss/naada.sass */
+  .entry-title {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+
+  /* line 1197, ../scss/naada.sass */
+  img.resource-boxes {
+    width: 260px;
+  }
+}
+/* HEALCODE OVERRIDES */
+/* line 1203, ../scss/naada.sass */
+#hc_enrollments_301084042aa:first-child .enrollment {
+  display: block;
+}
+/* line 1205, ../scss/naada.sass */
+#hc_enrollments_301084042aa .enrollment {
+  display: none;
+}
+
+/* Healcode widget tweaks */
+/* New Horizontal Schedule Widget for homepage */
+@media only screen and (min-width: 640px) {
+  /* line 1215, ../scss/naada.sass */
+  div.horz-sched {
+    margin-bottom: 2rem;
+  }
+  /* line 1217, ../scss/naada.sass */
+  div.horz-sched::after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+  /* line 1224, ../scss/naada.sass */
+  div.horz-sched .healcode table, div.horz-sched .healcode tbody {
+    border: 0;
+  }
+  /* line 1228, ../scss/naada.sass */
+  div.horz-sched div.healcode table.schedule tr td {
+    border-top: 0;
+  }
+  /* line 1230, ../scss/naada.sass */
+  div.horz-sched div.healcode table tr {
+    border-bottom: 0;
+  }
+  /* line 1232, ../scss/naada.sass */
+  div.horz-sched div.list_view li {
+    padding: 1rem;
+    width: 100px;
+    float: left;
+    min-height: 140px;
+    border-left: 1px dashed #dedede;
+  }
+  /* line 1238, ../scss/naada.sass */
+  div.horz-sched div.list_view li:last-child {
+    border-right: 1px dashed #dedede;
+  }
+  /* line 1241, ../scss/naada.sass */
+  div.horz-sched .healcode a.hc-button.signup_now {
+    font-size: 0.75rem;
+  }
+  /* line 1243, ../scss/naada.sass */
+  div.horz-sched .healcode .hc_time {
+    line-height: 1rem;
+  }
+  /* line 1245, ../scss/naada.sass */
+  div.horz-sched .healcode span.hc_endtime {
+    color: #c3c3c3;
+  }
+  /* line 1247, ../scss/naada.sass */
+  div.horz-sched .healcode .mbo_class {
+    padding-top: 7px;
+    line-height: 1rem;
+  }
+  /* line 1250, ../scss/naada.sass */
+  div.horz-sched div.list_view li div.signup {
+    position: absolute;
+    bottom: 7%;
+    top: inherit;
+    margin-top: 0;
+    left: 10px;
+  }
+}
+@media only screen and (max-width: 639px) {
+  /* line 1260, ../scss/naada.sass */
+  div.horz-sched tbody {
+    border: 0;
+  }
+  /* line 1262, ../scss/naada.sass */
+  div.horz-sched div.list_view li {
+    border-left: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+  }
+  /* line 1265, ../scss/naada.sass */
+  div.horz-sched div.healcode table tr {
+    border-bottom: 0;
+  }
+  /* line 1267, ../scss/naada.sass */
+  div.horz-sched div.healcode table.schedule tr td {
+    border-top: 0;
+  }
+}
+/* End Horizontal sched */
+/* line 1278, ../scss/naada.sass */
+div.healcode div.hc_footer div {
+  display: none !important;
+}
+/* line 1281, ../scss/naada.sass */
+div.healcode a.hc-button {
+  display: inline-block !important;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  color: white;
+  background-color: #404040;
+}
+/* line 1289, ../scss/naada.sass */
+div.healcode a:hover.hc-button {
+  background-color: #fabd30;
+  color: white !important;
+}
+/* line 1292, ../scss/naada.sass */
+div.healcode a.hc-button.signup_now {
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  background-color: #f7ad00;
+}
+/* line 1296, ../scss/naada.sass */
+div.healcode a a {
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold !important;
+}
+
+/* Subject to Page ID, ie use homepage for deployment */
+/* line 1307, ../scss/naada.sass */
+body.page-id-6613 div.healcode.enrollments .enrollment, body.page-id-6613 div.healcode.enrollments .healcode-course {
+  width: 300px !important;
+}
+
+/* Hides Sub Enrollments in Courses */
+/* line 1312, ../scss/naada.sass */
+div.healcode-course div.enrollment {
+  display: none !important;
+}
+
+/* HEALCODE CAROUSEL CSS */
+/* line 1317, ../scss/naada.sass */
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+/* line 1327, ../scss/naada.sass */
+#modal {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 14px;
+  padding: 8px;
+  /*margin: 3rem 6rem; */
+}
+
+/* line 1334, ../scss/naada.sass */
+#content {
+  border-radius: 8px;
+  background: white;
+  padding: 20px;
+  overflow: hidden;
+}
+
+/* line 1340, ../scss/naada.sass */
+#close {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  display: block;
+  top: -7px;
+  right: -7px;
+  background-color: white;
+  border-radius: 14px;
+  font-weight: bold;
+  padding: 1px 8px;
+  border: 2px solid #5a5a5a;
+}
+/* line 1352, ../scss/naada.sass */
+#close:hover {
+  background: #f7ad00;
+  color: white;
+}
+
+/* line 1357, ../scss/naada.sass */
+.naada-carousel div.healcode-image-area {
+  float: none !important;
+  width: 288px;
+  margin: 0 auto 1.5rem !important;
+}
+/* line 1361, ../scss/naada.sass */
+.naada-carousel div.healcode-image-area img {
+  border: 1px solid #e5e5e5;
+  float: none;
+  padding: 6px;
+  margin: 0;
+  width: 288px;
+  height: 178px;
+  border-radius: 5px;
+}
+/* line 1369, ../scss/naada.sass */
+.naada-carousel h2.healcode-enrollment-name, .naada-carousel h2.healcode-course-name {
+  text-transform: capitalize;
+}
+/* line 1371, ../scss/naada.sass */
+.naada-carousel span.healcode-trainer-name {
+  text-align: center;
+  display: block;
+}
+/* line 1374, ../scss/naada.sass */
+.naada-carousel div.healcode .healcode-course {
+  min-height: 466px;
+}
+/* line 1376, ../scss/naada.sass */
+.naada-carousel .slick-slider {
+  max-height: 450px;
+}
+/* line 1378, ../scss/naada.sass */
+.naada-carousel .slick-slider .slick-slide {
+  width: 360px;
+}
+@media only screen and (min-width: 900px) and (max-width: 1024px) {
+  /* line 1381, ../scss/naada.sass */
+  .naada-carousel .slick-slider .slick-slide {
+    width: 400px;
+    margin: 0 1rem 0;
+  }
+}
+@media only screen and (min-width: 780px) and (max-width: 899px) {
+  /* line 1385, ../scss/naada.sass */
+  .naada-carousel .slick-slider .slick-slide {
+    width: 330px;
+  }
+}
+@media only screen and (min-width: 680px) and (max-width: 779px) {
+  /* line 1388, ../scss/naada.sass */
+  .naada-carousel .slick-slider .slick-slide {
+    width: 320px;
+  }
+}
+@media only screen and (min-width: 520px) and (max-width: 679px) {
+  /* line 1391, ../scss/naada.sass */
+  .naada-carousel .slick-slider .slick-slide {
+    width: 460px;
+    margin: 0 2rem;
+  }
+}
+@media only screen and (min-width: 450px) and (max-width: 519px) {
+  /* line 1395, ../scss/naada.sass */
+  .naada-carousel .slick-slider .slick-slide {
+    width: 400px;
+    margin: 0 2rem;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 449px) {
+  /* line 1399, ../scss/naada.sass */
+  .naada-carousel .slick-slider .slick-slide {
+    width: 320px;
+    margin: 0 1rem;
+  }
+}
+@media only screen and (max-width: 374px) {
+  /* line 1403, ../scss/naada.sass */
+  .naada-carousel .slick-slider .slick-slide {
+    width: 270px;
+    margin: 0;
+    padding: 0 !important;
+  }
+  /* line 1407, ../scss/naada.sass */
+  .naada-carousel .slick-slider div.healcode-image-area img {
+    width: 250px;
+    height: 153px;
+  }
+}
+/* line 1410, ../scss/naada.sass */
+.naada-carousel .slick-list {
+  padding: 0 0 0 0 !important;
+}
+
+/* Slick Slider */
+/* line 1415, ../scss/naada.sass */
+.slick-prev, .slick-next {
+  height: 40px !important;
+  width: 40px !important;
+}
+
+/* line 1419, ../scss/naada.sass */
+.slick-prev:before, .slick-next:before {
+  color: #b3ba1c !important;
+  font-size: 40px !important;
+}
+
+/* line 1423, ../scss/naada.sass */
+.entry-content ul.slick-dots {
+  margin-left: 0;
+}
+
+/* WooCommerce Styles */
+/* line 1430, ../scss/naada.sass */
+.woocommerce main div.product p.price, .woocommerce main div.product span.price {
+  color: #b3ba1c;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+/* line 1434, ../scss/naada.sass */
+.woocommerce main div.product .quantity input {
+  padding: 0.5rem;
+}
+/* line 1436, ../scss/naada.sass */
+.woocommerce main #respond input#submit.alt, .woocommerce main a.button.alt, .woocommerce main button.button.alt, .woocommerce main input.button.alt {
+  background-color: #f7ad00;
+  padding: 0.75rem;
+}
+/* line 1439, ../scss/naada.sass */
+.woocommerce main #respond input#submit.alt:hover, .woocommerce main a.button.alt:hover, .woocommerce main button.button.alt:hover, .woocommerce main input.button.alt:hover {
+  background-color: #fabd30;
+}
+/* line 1441, ../scss/naada.sass */
+.woocommerce main button.single_add_to_cart_button.button.alt.large.centered {
+  padding: 1.25rem 2rem;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  float: none;
+}
+
+/* line 1450, ../scss/naada.sass */
+.woocommerce-cart main td.product-name, .woocommerce-checkout main td.product-name {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* line 1457, ../scss/naada.sass */
+body.woocommerce main .woocommerce .order_details li, body.woocommerce-cart main .woocommerce .order_details li, body.woocommerce-checkout main .woocommerce .order_details li {
+  list-style-type: none;
+  font-size: 0.8rem;
+}
+/* line 1460, ../scss/naada.sass */
+body.woocommerce main .woocommerce .woocommerce-message, body.woocommerce-cart main .woocommerce .woocommerce-message, body.woocommerce-checkout main .woocommerce .woocommerce-message {
+  border-top: 3px solid #b3ba1c;
+}
+/* line 1462, ../scss/naada.sass */
+body.woocommerce main .woocommerce .woocommerce-info, body.woocommerce-cart main .woocommerce .woocommerce-info, body.woocommerce-checkout main .woocommerce .woocommerce-info {
+  border-top-color: #3fa4dc;
+}
+/* line 1464, ../scss/naada.sass */
+body.woocommerce main .woocommerce .woocommerce-info:before, body.woocommerce-cart main .woocommerce .woocommerce-info:before, body.woocommerce-checkout main .woocommerce .woocommerce-info:before {
+  color: #3fa4dc;
+}
+/* line 1466, ../scss/naada.sass */
+body.woocommerce main .woocommerce #respond input#submit.alt, body.woocommerce main .woocommerce a.button.alt, body.woocommerce main .woocommerce button.button.alt, body.woocommerce main .woocommerce input.button.alt, body.woocommerce-cart main .woocommerce #respond input#submit.alt, body.woocommerce-cart main .woocommerce a.button.alt, body.woocommerce-cart main .woocommerce button.button.alt, body.woocommerce-cart main .woocommerce input.button.alt, body.woocommerce-checkout main .woocommerce #respond input#submit.alt, body.woocommerce-checkout main .woocommerce a.button.alt, body.woocommerce-checkout main .woocommerce button.button.alt, body.woocommerce-checkout main .woocommerce input.button.alt {
+  background-color: #f7ad00;
+}
+/* line 1468, ../scss/naada.sass */
+body.woocommerce main .woocommerce #respond input#submit.alt:hover, body.woocommerce main .woocommerce a.button.alt:hover, body.woocommerce main .woocommerce button.button.alt:hover, body.woocommerce main .woocommerce input.button.alt:hover, body.woocommerce-cart main .woocommerce #respond input#submit.alt:hover, body.woocommerce-cart main .woocommerce a.button.alt:hover, body.woocommerce-cart main .woocommerce button.button.alt:hover, body.woocommerce-cart main .woocommerce input.button.alt:hover, body.woocommerce-checkout main .woocommerce #respond input#submit.alt:hover, body.woocommerce-checkout main .woocommerce a.button.alt:hover, body.woocommerce-checkout main .woocommerce button.button.alt:hover, body.woocommerce-checkout main .woocommerce input.button.alt:hover {
+  background-color: #fabd30;
+}
+/* line 1470, ../scss/naada.sass */
+body.woocommerce main .woocommerce input.button.alt:disabled, body.woocommerce main .woocommerce .woocommerce input.button.alt:disabled[disabled], body.woocommerce-cart main .woocommerce input.button.alt:disabled, body.woocommerce-cart main .woocommerce .woocommerce input.button.alt:disabled[disabled], body.woocommerce-checkout main .woocommerce input.button.alt:disabled, body.woocommerce-checkout main .woocommerce .woocommerce input.button.alt:disabled[disabled] {
+  background-color: #f7ad00;
+}
+/* line 1472, ../scss/naada.sass */
+body.woocommerce main .star-rating, body.woocommerce-cart main .star-rating, body.woocommerce-checkout main .star-rating {
+  color: #b3ba1c;
+}
+/* line 1474, ../scss/naada.sass */
+body.woocommerce main #payment ul.payment_methods li, body.woocommerce-cart main #payment ul.payment_methods li, body.woocommerce-checkout main #payment ul.payment_methods li {
+  list-style-type: none;
+}
+/* line 1476, ../scss/naada.sass */
+body.woocommerce main #reviews #comments ol.commentlist li, body.woocommerce-cart main #reviews #comments ol.commentlist li, body.woocommerce-checkout main #reviews #comments ol.commentlist li {
+  list-style-type: none;
+  margin: 2rem 0 2rem;
+}
+/* line 1479, ../scss/naada.sass */
+body.woocommerce main #reviews #comments ol.commentlist li img.avatar, body.woocommerce-cart main #reviews #comments ol.commentlist li img.avatar, body.woocommerce-checkout main #reviews #comments ol.commentlist li img.avatar {
+  width: 100px;
+  background: transparent;
+  border-radius: 4px;
+}
+/* line 1483, ../scss/naada.sass */
+body.woocommerce main #reviews #comments ol.commentlist li .comment-text, body.woocommerce-cart main #reviews #comments ol.commentlist li .comment-text, body.woocommerce-checkout main #reviews #comments ol.commentlist li .comment-text {
+  margin: 0 0 0 120px;
+  background: whitesmoke;
+  border: 0;
+}
