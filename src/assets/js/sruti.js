@@ -21,6 +21,8 @@ var sruti = {
         window.AudioContext = window.AudioContext || window.webkitAudioContext;
 
         this.AudioContext = new window.AudioContext();
+        this.gainNode = this.AudioContext.createGain();
+        this.gainNode.connect(this.AudioContext.destination);
         this.loadSamples();
         //this.test();
 
@@ -67,7 +69,7 @@ var sruti = {
         if (this.playing) {
             label.source = sruti.AudioContext.createBufferSource();
             label.source.buffer = sruti.source[$(label).data('id') - 1].buffer;
-            label.source.connect(sruti.AudioContext.destination);
+            label.source.connect(this.gainNode);
             label.source.loop = true;
             label.source.start();
         }
@@ -78,7 +80,11 @@ var sruti = {
     initUI: function () {
         var _this = this;
         $('.sruti-box').show();
-
+        $('.loading').hide();
+        $(window).on('resize',function(){
+            $('.sruti_keyboard').width($('.sruti-box').width());
+        })
+        $(window).trigger('resize');
 
         $('.sruti-box label').click(function (e) {
 
@@ -193,6 +199,8 @@ var sruti = {
         this.playing = true;
         var _this = this;
         this.log(this.notesPlaying);
+
+        this.gainNode.gain.value = 0;
         $.each(this.notesPlaying, function (indx, label) {
             _this.log('label:');
             _this.log(label);
@@ -204,10 +212,25 @@ var sruti = {
             }
             label.source = sruti.AudioContext.createBufferSource();
             label.source.buffer = sruti.source[$(label).data('id') - 1].buffer;
-            label.source.connect(sruti.AudioContext.destination);
+            label.source.connect(sruti.gainNode);
             label.source.loop = true;
             label.source.start();
-        })
+        });
+        //this.gainNode.gain.linearRampToValueAtTime(1.0, this.AudioContext.currentTime + 2);
+        var current=0;
+
+        var gainchange = function(){
+            if(current>=1)
+            {
+                _this.gainNode.gain.value=1;
+            }
+            else{
+                current+=0.02;
+                _this.gainNode.gain.value=current;
+                setTimeout(gainchange,50);
+            }
+        }
+        setTimeout(gainchange,0)
 
 
     },
@@ -221,6 +244,6 @@ var sruti = {
         this.playing = false;
     }
 };
-$(function () {
+$(window).on('load',function() {
     sruti.init();
 });

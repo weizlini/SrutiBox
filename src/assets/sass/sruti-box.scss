@@ -1,19 +1,18 @@
 @import '_fonts.scss';
+
 .sruti-box {
   box-sizing: border-box;
   font-family: 'lato';
   box-sizing: content-box;
-  padding: 20px;
   background: #fff;
   display: none;
   width: auto;
-  display: inline-block;
   background:#fff;
 
   .sruti_keyboard {
     background: url(../images/wood-light.jpg) repeat;
     display:block;
-    width: 180px;
+    width: 220px;
     padding:10px;
     height: 125px;
     label {
@@ -24,7 +23,7 @@
       position: relative;
       height: 70px;
       background: rgba(255, 255, 255,0.6);
-
+      cursor:pointer;
       border-bottom-right-radius: 5px;
       border-bottom-left-radius: 5px;
       color: #000;
@@ -40,6 +39,7 @@
         padding-bottom: 0.2em;
         font-size: 10px;
         width: 100%;
+        z-index:1;
       }
       &.black {
         position: absolute;
@@ -47,13 +47,38 @@
         top: 0;
         left: 50%;
         width: 100%;
-        background: rgba(0, 0, 0,0.7);
+        background: url(../images/wood-light.jpg) repeat;
         color: #fff;
         z-index: 1;
         &.on{
           background:#000;
         }
+
       }
+      &.black::after{
+        content:'';
+        position:absolute;
+        background: rgba(0,0,0,0.5);
+        width:100%;
+        height:45px;
+        top:0;
+        left:0;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+
+      }
+    }
+    &.on.black::after{
+      content:'';
+      position:absolute;
+      background:rgba(0,0,0,1);
+      width:100%;
+      height:45px;
+      top:0;
+      left:0;
+      border-bottom-right-radius: 5px;
+      border-bottom-left-radius: 5px;
+
     }
 
   }
@@ -68,6 +93,8 @@
     text-transform: uppercase;
     margin:10px 0;
     height:30px;
+
+
     &:focus {
       outline: none;
     }
