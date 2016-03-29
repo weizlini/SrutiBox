@@ -32,7 +32,7 @@ the wp_plugin folder contains the folder sruti-box which you need only copy into
 
 ### using the plugin
 
-simple activate the plugin, and then add the 'sruti-box' widget to your sidebar or wherever you want in your wordpress site
+simply activate the plugin, and then add the 'sruti-box' widget to your sidebar or wherever you want in your wordpress site.
 
 
 

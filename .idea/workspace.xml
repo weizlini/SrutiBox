@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c65270cd-8694-47cf-be32-9a4f3402a847" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="SrutiBox.iws" />
@@ -37,8 +38,8 @@
       <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.13043478">
-              <caret line="2" column="290" selection-start-line="2" selection-start-column="290" selection-end-line="2" selection-end-column="290" />
+            <state vertical-scroll-proportion="0.73913044">
+              <caret line="34" column="123" selection-start-line="34" selection-start-column="123" selection-end-line="34" selection-end-column="123" />
               <folding />
             </state>
           </provider>
@@ -540,8 +541,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13043478">
-          <caret line="2" column="290" selection-start-line="2" selection-start-column="290" selection-end-line="2" selection-end-column="290" />
+        <state vertical-scroll-proportion="0.73913044">
+          <caret line="34" column="123" selection-start-line="34" selection-start-column="123" selection-end-line="34" selection-end-column="123" />
           <folding />
         </state>
       </provider>
