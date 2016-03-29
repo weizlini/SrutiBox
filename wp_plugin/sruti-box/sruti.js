@@ -15,9 +15,16 @@ var sruti = {
         '12_b1.wav',
         '13_c2.wav'
     ],
+    baseUrl:'',
     AudioContext: null,
     source: [],
-    init: function () {
+    init: function (baseUrl) {
+
+        if(baseUrl)
+            this.baseUrl=baseUrl;
+        else
+            this.baseUrl='';
+
         window.AudioContext = window.AudioContext || window.webkitAudioContext;
 
         this.AudioContext = new window.AudioContext();
@@ -25,6 +32,7 @@ var sruti = {
         this.gainNode.connect(this.AudioContext.destination);
         this.loadSamples();
         //this.test();
+
 
     },
     notesPlaying: [],
@@ -119,6 +127,7 @@ var sruti = {
         $('#drone-picker').on('change', function () {
             var value = $(this).val();
             var wasplaying = _this.playing;
+            //alert(wasplaying)
             _this.stop();
             _this.clearNotes();
 
@@ -132,8 +141,12 @@ var sruti = {
                 _this.log(label);
                 label.trigger('click');
             })
-            if(wasplaying)
-                _this.play();
+            setTimeout(function(){
+
+                if(wasplaying)
+                    _this.play();
+            },0)
+
 
         })
         $('#drone-picker').trigger('change');
@@ -150,7 +163,7 @@ var sruti = {
     loadSample: function (path, source) {
         sruti.log('about to load ' + path);
         var request = new XMLHttpRequest();
-        request.open('GET', 'audio/' + path, true);
+        request.open('GET', this.baseUrl+'audio/' + path, true);
         request.responseType = "arraybuffer";
         request.onload = function () {
 
@@ -198,6 +211,7 @@ var sruti = {
     playing: false,
     activeSources: [],
     play: function () {
+        this.log('play called');
         if (this.playing)
             return;
 
@@ -227,7 +241,7 @@ var sruti = {
             if(current>=1)
             {
                 _this.gainNode.gain.value=1;
-                this.playing = true;
+                _this.playing = true;
             }
             else{
                 current+=0.05;
@@ -252,6 +266,4 @@ var sruti = {
 
     }
 };
-$(window).on('load',function() {
-    sruti.init();
-});
+
