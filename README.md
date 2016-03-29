@@ -28,7 +28,11 @@ using your localhost, copy the demo folder to your localhost document root, or c
   
 ##wordpress plugin
 
-the wp_plugin folder contains the folder sruti-box which you need only copy into your worpress plugin folder. While this folder is automatically created with a `grunt build` or `grunt dev` command, i chose to commit it with the wp_plugin folder as part of the repo, so that it would be easy for non developers to download and use it
+the wp_plugin folder contains the folder sruti-box which you need only copy into your worpress plugin folder. While this folder is automatically created with a `grunt build` or `grunt dev` command, i chose to commit it with the wp_plugin folder as part of the repo, so that it would be easy for non developers to download and use it.
+
+### using the plugin
+
+simple activate the plugin, and then add the 'sruti-box' widget to your sidebar or wherever you want in your wordpress site
 
 
 
